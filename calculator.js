@@ -28,8 +28,14 @@ app.get( "/bmicalculator" , function (req , res){
 })
 
 app.post( "/bmicalculator" , function (req, res){
-    console.log(req.body);
-    res.send("success");
+    
+    var weight = req.body.weight ;
+    var height = req.body.height / 100 ;
+
+    var bmi = weight / (height * height );
+    bmi = Math.round(bmi * 100) / 100
+
+    res.send("Your BMI is " + bmi);
 })
  
 app.listen( 3000 , function () {
