@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaswat4/simple-bmi-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shaswat4/simple-bmi-calculator/issues"
+  },
+  "homepage": "https://github.com/shaswat4/simple-bmi-calculator#readme"
 }
