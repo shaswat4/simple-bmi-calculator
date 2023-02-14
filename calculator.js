@@ -18,11 +18,20 @@ app.post( "/" , function (req, res) {
     var ans = n1 + n2 ;
 
     console.log(ans);
-    
+
     res.send("answer is " +  ans );
 
 } );
 
+app.get( "/bmicalculator" , function (req , res){
+    res.sendFile( __dirname + "/bmiCalculator.html");
+})
+
+app.post( "/bmicalculator" , function (req, res){
+    console.log(req.body);
+    res.send("success");
+})
+ 
 app.listen( 3000 , function () {
     console.log("listening at port 3000");
 });
